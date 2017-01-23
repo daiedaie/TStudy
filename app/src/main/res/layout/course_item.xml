@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="70dp">
+            <ImageView
+                android:id="@+id/courseitem_img"
+                android:layout_width="130dp"
+                android:layout_height="70dp" />
+            <LinearLayout
+                android:background="#e0000000"
+                android:orientation="horizontal"
+                android:layout_width="130dp"
+                android:gravity="center_horizontal"
+                android:layout_alignParentBottom="true"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@drawable/user"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp" />
+
+                <TextView
+                    android:id="@+id/courseitem_people"
+                    android:text="3243人在学"
+                    android:textColor="#ffffff"
+                    android:textSize="10sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+            <TextView
+                android:id="@+id/courseitem_content"
+                android:text="HTML5 Web开发进入新时代教程"
+                android:textSize="17sp"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/courseitem_time"
+                android:text="更新时间：2015-6-21"
+                android:layout_marginLeft="5dp"
+                android:textColor="#28C277"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

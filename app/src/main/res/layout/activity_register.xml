@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    android:background="#1AE694">
+
+    <LinearLayout
+        android:id="@+id/loginPanel"
+        android:layout_centerInParent="true"
+        android:layout_width="400dp"
+        android:layout_height="600dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background_login_div" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="新用户"
+            android:layout_marginTop="15dp"
+            android:textSize="25dp"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="Please Register" />
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <GridView
+                android:id="@+id/gridView_reg"
+                android:numColumns="4"
+                android:layout_margin="5dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </GridView>
+
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/accountEt"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="30dp"
+            android:singleLine="true"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/qq_edit_login"
+            android:hint="设置用户名"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/pwdEt"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center_horizontal"
+            android:singleLine="true"
+            android:password="true"
+            android:background="@drawable/qq_edit_login"
+            android:hint="设置密码"
+            android:ems="10" />
+
+        <Button
+            android:id="@+id/subBtn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="18dp"
+            android:text="注册"
+            android:background="@drawable/background_button_div"/>
+    </LinearLayout>
+
+</RelativeLayout>

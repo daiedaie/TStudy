@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.lijie.itstudy.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+        <View
+            android:background="#9E9E9E"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"></View>
+
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="match_parent"
+            android:background="#ffffff"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_height="60dp">
+
+            <RadioButton
+                android:text="首页"
+                android:id="@+id/b1"
+                android:drawableTop="@drawable/main"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:gravity="center_horizontal"
+                android:button="@null"
+                android:checked="true"
+                android:layout_width="wrap_content"
+                android:paddingTop="7dp"
+                android:layout_height="match_parent" />
+            <RadioButton
+                android:text="全部科目"
+                android:id="@+id/b2"
+                android:gravity="center_horizontal"
+                android:drawableTop="@drawable/allsubject"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:button="@null"
+                android:layout_width="wrap_content"
+                android:paddingTop="7dp"
+                android:layout_height="match_parent" />
+            <RadioButton
+                android:text="个人中心"
+                android:id="@+id/b4"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:drawableTop="@drawable/me"
+                android:button="@null"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:paddingTop="7dp"
+                android:layout_height="match_parent" />
+        </RadioGroup>
+
+
+    </LinearLayout>
+</RelativeLayout>

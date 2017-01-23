@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/la"
+            android:layout_width="match_parent"
+            android:background="#28C277"
+            android:layout_height="250dp">
+
+            <ImageView
+                android:id="@+id/me_icon"
+                android:layout_marginTop="65dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ac2"
+                android:layout_width="80dp"
+                android:layout_height="80dp" />
+
+            <TextView
+                android:id="@+id/me_name"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:text="李半仙"
+                android:textSize="20sp"
+                android:textColor="#ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_me1"
+                    android:text="入学日期："
+                    android:textColor="#ffffff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/me_time"
+                    android:text="2015-1-2"
+                    android:textColor="#ffffff"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_me2"
+                    android:text="|"
+                    android:textColor="#ffffff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_me3"
+                    android:text="积分："
+                    android:textColor="#ffffff"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/me_math"
+                    android:text="1020"
+                    android:textColor="#ffffff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/me_study"
+                android:textColor="#ffffff"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:text="最近学习：HTML5入门"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_alignBottom="@+id/la"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ListView
+                android:id="@+id/listview1"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </ListView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/me_button"
+        android:background="@drawable/button2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="170dp"
+        android:text="登录/注册"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

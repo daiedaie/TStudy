@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:text="课程得分："
+        android:textColor="#28C277"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <RatingBar
+        android:layout_margin="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:stepSize="0.5"
+        android:numStars="5"
+        android:id="@+id/ratingBar" />
+
+    <TextView
+        android:textColor="#28C277"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="课程简介："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/reserve"
+        android:layout_margin="20dp"
+        android:text="带领大家学习Android体系中最常见的Acvitiy组件，深入Activity内部，剖析Activity的生命周期分析以及Framew层的相关介绍\n\nActivity的Task和Back Stack Activity启动模式 \nActivity之间的数据交换 \nActivity之间传递大数据的问题"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>
